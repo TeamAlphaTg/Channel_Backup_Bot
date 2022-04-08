@@ -1,4 +1,5 @@
 import telegram # pip install python-telegram-bot
+import os
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 FROM_CHANNEL = os.environ.get("FROM_CHANNEL", None)
