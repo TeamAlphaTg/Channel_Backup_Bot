@@ -1,10 +1,16 @@
 import telegram # pip install python-telegram-bot
 
-TOKEN = "1466021539:AAGp5pryLtMONjzPl0QrdGGI1-VrrEDFN1c"  # Replace telegram bot api token here
-START_MSG = 1  # Change value according your requirement
-STOP_MSG = 10  # Change value according your requirement
-DEST_ID = "@sourceUsername"  # change with your Source Channal Username/ID
-SRC_ID = "@destinationUsername"  # change with your Destination/Backup Channal Username/ID
+BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+FROM_CHANNEL = os.environ.get("FROM_CHANNEL", None)
+TO_CHANNEL = os.environ.get("TO_CHANNEL", None)
+START_MSG = os.environ.get("START_MSG", None)
+STOP_MSG = os.environ.get("STOP_MSG", None)
+
+TOKEN = "{BOT_TOKEN}"  # Replace telegram bot api token here
+START_MSG = {START_MSG}  # Change value according your requirement
+STOP_MSG = {STOP_MESSEGE}  # Change value according your requirement
+DEST_ID = "{FROM_CHANNEL}"  # change with your Source Channal Username/ID
+SRC_ID = "{TO_CHANNEL}"  # change with your Destination/Backup Channal Username/ID
 
 auth = telegram.Bot(token=TOKEN)
 def forward(START_MSG):
