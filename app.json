@@ -33,11 +33,11 @@
     },
     "START_MSG": {
       "description": "Start Messege Id",
-      "value": ""
+      "value": "1"
     },
     "END_MSG": {
       "description": "Stop Msg Id. Set It Default",
-      "value": ""
+      "value": "100000000"
     }
   },
   "addons": [
